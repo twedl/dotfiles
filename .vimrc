@@ -39,9 +39,14 @@ set laststatus=2
 " backspace over anything.
 set backspace=indent,eol,start
 
+filetype plugin indent on
 " Add tab<>space help
 " show existing tab as 4 spaces
 set tabstop=4
+
+" When indenting with '>', use 4 space width
+set shiftwidth=4
+
 
 " By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
 " shown in any window) that has unsaved changes. This is to prevent you from "
