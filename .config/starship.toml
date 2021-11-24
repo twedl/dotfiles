@@ -1,0 +1,10 @@
+# insert blank line between shell prompts
+add_newline = true
+
+# replace the ">" symbol in the rpompt with "->"
+[character]
+success_symbol = "[>](bold green)"
+
+[package]
+disabled = true
+
