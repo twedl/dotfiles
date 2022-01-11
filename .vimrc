@@ -1,4 +1,4 @@
-" This .vimrc is from MIT's 'Missing Semester of Your CS Education',
+" This .vimrc is adapted from MIT's 'Missing Semester of Your CS Education',
 " available at https://missing.csail.mit.edu/
 " Comments in Vimscript start with a `"`.
 
@@ -46,6 +46,9 @@ set tabstop=4
 
 " When indenting with '>', use 4 space width
 set shiftwidth=4
+
+" Round misaligned indents to the next shiftwidth
+set shiftround
 
 
 " By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
