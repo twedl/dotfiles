@@ -4,6 +4,8 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="/usr/local/Homebrew/opt/avr-gcc@8/bin:$PATH"
 
+export PATH="/Library/TeX/texbin/:$PATH"
+
 #if [ "$(sysctl -n sysctl.proc_translated)" = "1" ]; then
 if [ "$(arch)" = "i386" ]; then
     brew_path="/usr/local/homebrew/bin"
@@ -14,13 +16,15 @@ else
 fi
 
 export PATH="${brew_path}:${PATH}"
-
-
-
-
-
+export PATH="${PATH}:$HOME/Library/Python/3.9/bin"
+export PATH="${PATH}:$HOME/.cargo/bin"
 
 eval "$(starship init bash)"
+
+
+
+
+alias sshk="kitty +kitten ssh"
 
 
 # BEGIN_KITTY_SHELL_INTEGRATION

@@ -1,10 +1,27 @@
 # insert blank line between shell prompts
 add_newline = true
 
+command_timeout = 1000
+
 # replace the ">" symbol in the rpompt with "->"
 [character]
 success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
 
 [package]
 disabled = true
 
+[git_branch]
+disabled = true
+
+[git_commit]
+disabled = true
+
+[git_state]
+disabled = true
+
+[git_metrics]
+disabled = true
+
+[git_status]
+disabled = true
